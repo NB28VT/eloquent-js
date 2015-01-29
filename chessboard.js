@@ -23,12 +23,12 @@ var rowSize = 4;
 
 var row = "";
 // Row builder
-for (var rowSquare= 1; rowSquare < rowSize + 1; rowSquare++)
+for (var rowSquare= 1; rowSquare <= rowSize; rowSquare++)
   {
     row += "# ";
   }
 
-for (var rowNumber = 1; rowNumber < columnSize +1 ; rowNumber++)
+for (var rowNumber = 1; rowNumber <= columnSize; rowNumber++)
   {
     if (rowNumber % 2 == 0)
       board += row + " \n" ;
