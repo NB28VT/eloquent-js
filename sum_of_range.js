@@ -44,7 +44,7 @@ mySteppedRange = function(start, end, step){
     for(var num = end; num >= start; num += step){
       array.push(num);
     }
-  }else{
+  } else {
     for(var num = start; num <= end; num += step){
       array.push(num);
     }
@@ -53,11 +53,6 @@ mySteppedRange = function(start, end, step){
 };
 
 console.log(sumRange(mySteppedRange(1,10)));
-
-
-
-
-
 
 
 //
