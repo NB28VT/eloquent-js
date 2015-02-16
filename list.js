@@ -41,7 +41,6 @@ var arrayToList = function(array){
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
 
-
 var listToArray = function(list){
   var returnArray = [];
   for (var node = list; node; node = node.rest) {
@@ -52,6 +51,17 @@ var listToArray = function(list){
 
 console.log(listToArray(arrayToList([10, 20, 30])));
 // → [10, 20, 30]
+
+
+// Prepend, which takes an element and a list and creates a new list that adds the element to the front of the input list,
+var prepend = function(element, list){
+  var pointer = list;
+  var x = element;
+  var list = { value: x, rest: pointer };
+  return list;
+}
+
+
 console.log(prepend(10, prepend(20, null)));
 // → {value: 10, rest: {value: 20, rest: null}}
 console.log(nth(arrayToList([10, 20, 30]), 1));
