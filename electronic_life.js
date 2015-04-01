@@ -1,3 +1,17 @@
+var plan = ["############################",
+            "#      #    #      o      ##",
+            "#                          #",
+            "#          #####           #",
+            "##         #   #    ##     #",
+            "###           ##     #     #",
+            "#           ###      #     #",
+            "#   ####                   #",
+            "#   ##       o             #",
+            "# o  #         o       ### #",
+            "#    #                     #",
+            "############################"];
+
+
 
 // Vectors
 function Vector(x, y){
@@ -111,3 +125,11 @@ World.prototype.toString = function(){
 
 
 // Wall object
+function Wall(){}
+
+
+
+var world = new World(plan, {"#": Wall,
+"o": BouncingCritter});
+
+console.log(world.toString());
