@@ -4,6 +4,9 @@
 //
 // Add a getter property length to the prototype that computes the length of the vector—that is, the distance of the point (x, y) from the origin (0, 0).
 
+// re look at this to follow variable assignment 
+
+
 
 function Vector(x,y){
   this.x = x;
