@@ -24,7 +24,6 @@ function promptNumber(question) {
 console.log(promptNumber("How many people do you see?"));
 
 ///// Exception handling
-
 function PromptDirection(question){
   var result = prompt(question, "");
   if (result.toLowerCase() == "left") return "L";
