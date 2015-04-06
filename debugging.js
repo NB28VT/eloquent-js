@@ -39,7 +39,6 @@ function look(){
     return "two angry bears";
 }
 
-
 try {
 console.log("You see", look())
 } catch (error) {
